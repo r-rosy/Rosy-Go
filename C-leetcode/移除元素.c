@@ -1,14 +1,14 @@
 int removeElement(int* nums, int numsSize, int val){
-int x1,x2=0;
-for(int i=0;i<=numsSize-1;i++)
+int x2=0;
+for(int x1=0;x1<=numsSize-1;x1++)
 {
     if(nums[x1]!=val)
     {
-        x2=x1;
+        nums[x2]=nums[x1];
         x2++;
     }
-    x1++;
 }
+numsSize=x2;
 return x2;
 }
 
